@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bakdata.uni.RunnersDataProducerIntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-26T09:09:55" hostname="Ramins-MacBook-Pro.local" time="1.235">
+  <properties/>
+  <testcase name="shouldRunApp()" classname="com.bakdata.uni.RunnersDataProducerIntegrationTest" time="1.235">
+    <failure message="java.lang.IllegalArgumentException: resource dlakjfal-data.csv not found." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: resource dlakjfal-data.csv not found.
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:220)
+	at com.google.common.io.Resources.getResource(Resources.java:194)
+	at com.bakdata.uni.RunnersDataProducer.runApplication(RunnersDataProducer.java:44)
+	at com.bakdata.kafka.KafkaProducerApplication.run(KafkaProducerApplication.java:65)
+	at com.bakdata.uni.RunnersDataProducerIntegrationTest.shouldRunApp(RunnersDataProducerIntegrationTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2023-10-26 12:09:55.518 INFO  net.mguenther.kafka.junit.EmbeddedZooKeeper - Embedded ZooKeeper is starting.
+2023-10-26 12:09:55.539 INFO  org.apache.zookeeper.server.quorum.QuorumPeerConfig - clientPortAddress is 0.0.0.0:61656
+2023-10-26 12:09:55.539 INFO  org.apache.zookeeper.server.quorum.QuorumPeerConfig - secureClientPort is not set
+2023-10-26 12:09:55.539 INFO  org.apache.zookeeper.server.quorum.QuorumPeerConfig - observerMasterPort is not set
+2023-10-26 12:09:55.539 INFO  org.apache.zookeeper.server.quorum.QuorumPeerConfig - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2023-10-26 12:09:55.540 INFO  org.apache.curator.test.TestingZooKeeperMain - Starting server
+2023-10-26 12:09:55.542 INFO  org.apache.zookeeper.server.persistence.FileTxnSnapLog - zookeeper.snapshot.trust.empty : false
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer - 
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -   ______                  _                                          
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -  |___  /                 | |                                         
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -                                               | |                     
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer -                                               |_|                     
+2023-10-26 12:09:55.545 INFO  org.apache.zookeeper.server.ZooKeeperServer - 
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:host.name=localhost
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.version=17.0.8.1
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.vendor=Azul Systems, Inc.
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.home=/Users/ramingharib/.sdkman/candidates/java/17.0.8.1-zulu/zulu-17.jdk/Contents/Home
+2023-10-26 12:09:55.546 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.class.path=/Users/ramingharib/.gradle/caches/8.2/workerMain/gradle-worker.jar:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/classes/java/test:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/resources/test:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/classes/java/main:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/resources/main:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.bakdata.kafka/streams-bootstrap/2.13.0/855f299b2fc3160467d5000fe3ce21d86b03f179/streams-bootstrap-2.13.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-schema-serializer/7.4.1/399e51a1428068c30b0bae06a328457988709e46/kafka-json-schema-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-streams-avro-serde/7.4.0/8337007e9f6b58474bff9c5cad2c6736fd9ee112/kafka-streams-avro-serde-7.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-schema-provider/7.4.1/3084a9da0a77aa380982f8dbb7883799377c15c4/kafka-json-schema-provider-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-avro-serializer/7.4.0/7c2568542ef20c611740761e7b56d47eda7e6d7b/kafka-avro-serializer-7.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-schema-serializer/7.4.1/50c331de7e8c028d097d42f909625496deb92f52/kafka-schema-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-schema-registry-client/7.4.1/32f50e80e52f811ebb7968afb9ce6f4ecef8836/kafka-schema-registry-client-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.mguenther.kafka/kafka-junit/3.4.0/6c011b416f3eec30213cec72f1062197493f294d/kafka-junit-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-test/5.1.0/4290ecf6717625f621ae30b76dcb25fd0a0eafa0/curator-test-5.1.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.4.0/721eabebf4394a241d91426feef33109404dbd9/kafka_2.13-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.4.0/27d53d859ccd77e0a1e845f396da891fba038c00/kafka_2.13-3.4.0-test.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.15.2/2de7d1c43f3e99526a5debdf26fc6b1192e811f0/jackson-dataformat-csv-2.15.2.jar:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/common/build/libs/common-0.0.1-SNAPSHOT.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.4.0/9ee9b42d89f9bbd6f19bc4fce4407d5d240a7d48/kafka-streams-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-serializer/7.4.1/f5f1b3a745ab93856ad8264e297925ca3a609cab/kafka-json-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.avro/avro/1.11.1/81af5d4b9bdaaf4ba41bcb0df5241355ec34c630/avro-1.11.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-runtime/3.4.0/369199e3f291dd601db5b9a7643379e72f84b9a9/connect-runtime-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/3.4.0/5ad06330f4994c1262384223e125d03d2dc21f25/connect-json-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.4.0/cecca5f2ac676cb56fa465a471d3152a23f0f3d2/kafka-metadata-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/3.4.0/dee88baa492877135b453f8d813ccc101330fd0b/kafka-raft-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage/3.4.0/52ceb1fd9ef4d38dab094195a94951761bb6b9c/kafka-storage-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.kjetland/mbknor-jackson-jsonschema_2.13/1.0.39/6fb744d3318179cfe9d6fdad6283054caa454633/mbknor-jackson-jsonschema_2.13-1.0.39.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.15.2/8433b4bcdd2fa8e6ebca2f8035067ca2d6581deb/jackson-datatype-joda-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-tools/3.4.0/b85fccc04fef84aeef2829dc2b6d8657cf182a06/kafka-tools-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.15.2/66a50e089cfd2f93896b9b6f7a734cea7bcf2f31/jackson-datatype-jdk8-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.15.2/30d16ec2aef6d8094c5e2dce1d95034ca8b6cb42/jackson-datatype-jsr310-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.15.2/75f8d2788db20f6c587c7a19e94fb6248c314241/jackson-module-parameter-names-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.15.2/405653902e735adbd95c323f68e6a787f0c55c45/jackson-module-scala_2.13-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.15.2/eff432ebf1021d2fd64ce25bc7dcb24a37462b20/jackson-jaxrs-json-provider-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.15.2/d2bac694f9a5106a0ff239303e0e12fce937bd4b/jackson-jaxrs-base-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.15.2/6a22fd1c7b0f9788e81eea32c11dc8c1ba421f18/jackson-module-jaxb-annotations-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.15.2/9353b021f10c307c00328f52090de2bdb4b6ff9c/jackson-databind-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.15.2/4724a65ac8e8d156a24898d50fd5dbd3642870b8/jackson-annotations-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.15.2/a6fe1836469a69b3ff66037c324d75fc66ef137c/jackson-core-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-guava/2.15.2/b2079ae7afb9b36247637a02cd31355ac2ab563b/jackson-datatype-guava-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.20.0/7ab4f082fd162f60afcaf2b8744a3d959feab3e8/log4j-slf4j-impl-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.20.0/eb2a9a47b1396e00b5eee1264296729a70565cc0/log4j-core-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.2/40aeef2be7b04f96bb91e8b054affc28b7c7c935/junit-platform-engine-1.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.2/6f9f8621d8230cd38aa42e58ccbc0c00569131ce/junit-platform-commons-1.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.2/572f7a553b53f83ee59cc045ce1c3772864ab76c/junit-jupiter-engine-5.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.2/fed843581520eac594bc36bb4b0f55e7b947dda9/junit-jupiter-api-5.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.24.2/ebbf338e33f893139459ce5df023115971c2786f/assertj-core-3.24.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/4.7.0/dcdde55edcb523af7814ba47e57a8a097daa208d/picocli-4.7.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jooq/jool/0.9.14/e60fd100fa8ed864ba4f9aa7e4fe61cca9d34a07/jool-0.9.14.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-transforms/3.4.0/8373e2383980f95aaab50f4202e34fb977f750c1/connect-transforms-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/3.4.0/1db74c89867c04e9f844fd380578255f11949222/connect-api-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-group-coordinator/3.4.0/fbb3b282c480034b0a50ab0cf2c840102646b74/kafka-group-coordinator-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-server-common/3.4.0/401c9978d56389f344d24454ae84bdfb692e9611/kafka-server-common-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage-api/3.4.0/7ed2ee54c2ca42c004d753cc20baf55b244ef519/kafka-storage-api-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-log4j-appender/3.4.0/f0bc90dedb8651c54abebdd91c2da3916349e657/kafka-log4j-appender-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/7.4.1-ccs/3754e90cd12aa135a0f34a1ef1b66b4679da5915/kafka-clients-7.4.1-ccs.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/7.4.1-ccs/bdbd3d1cbecf3b245e74ea64f5fbb91a51c3949a/kafka-clients-7.4.1-ccs-test.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5/checker-qual-3.12.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69/error_prone_annotations-2.11.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/common-config/7.4.1/954f98b2de6222f627a00569edb9dcc372a17fc4/common-config-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/common-utils/7.4.1/c37998f437affadf49165fc4332311b7fc101c7f/common-utils-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.20.0/1fe6082e660daf07c689a89c94dc0f49c26b44bb/log4j-api-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.bitbucket.b_c/jose4j/0.7.9/b44a2235728ab1cad9ffd06013500f09a5f1d241/jose4j-0.7.9.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.4/e5838ddcf8c1c2b612a7956b9f80423a508675db/scala-logging_2.13-3.9.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.1.12.1/cb2f351bf4463751201f43bb99865235d5ba07ca/metrics-core-4.1.12.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/a6e74f826db85ff8c51c15ef0fa2ea0b462aef25/zookeeper-3.6.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.21/1a257bbdb9288f2558d3767cc2cc22b499d5091c/byte-buddy-1.12.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.6.0/6d987634f6bd6b9451f4789c6022c2115733a0de/scala-collection-compat_2.13-2.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/1.0.2/5b54f60ccf03e41e24c466462a72475ee918c304/scala-java8-compat_2.13-1.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.10/f19c2a5fc93a63398a5cfc56a14f0abf1d28d27c/scala-reflect-2.13.10.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/c51c00206bb913cd8612b24abd9fa98ae89719b1/commons-cli-1.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.10/67c1afabaea9ba51321159e70a78515647e1b73d/scala-library-2.13.10.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/7.1.2/ffe87d1c5d5b3a46d065cc4cf5311f18d8233a6b/rocksdbjni-7.1.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.5.2-1/fad786abc1d1b81570e8d9a2fc8a1ef479bc27b6/zstd-jni-1.5.2-1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.10.1/4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1/snappy-java-1.1.10.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.0/3aab2116756442bf0d4cd1c089b24d34c3baa253/snakeyaml-2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-annotations/2.2.0/404f8a4159d7d6034c3e515e3f673f19c6a100ee/swagger-annotations-2.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.github.erosb/everit-json-schema/1.14.2/7fb69dc1577932080cf8f186da73112cdedb2478/everit-json-schema-1.14.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.6.0/ee527b4e12e021023d295558add29c978cc64383/kotlin-scripting-compiler-embeddable-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-impl-embeddable/1.6.0/9ca5d07e5b64e747699081c51559803db6ec313d/kotlin-scripting-compiler-impl-embeddable-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.6.0/aea1438a95ff80b5ff71ac9fc998462297ddffea/kotlin-scripting-jvm-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.6.0/5bb427e36a331fde47846d026b687b3d5a244f7c/kotlin-scripting-common-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.0/a40b8b22529b733892edf4b73468ce598bb17f04/kotlin-stdlib-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/ch.qos.reload4j/reload4j/1.2.19/4eae9978468c5e885a6fb44df7e2bbc07a20e6ce/reload4j-1.2.19.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.34/6848a8321cfa554de4456a8230e141cf410feadb/jersey-container-servlet-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.34/15bb093c57c0cac880ad7b474f7fd653cac840a1/jersey-hk2-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/99f802e0cb3e953ba3d6e698795c4aeb98d37c48/jaxb-api-2.3.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/485de3a253e23f645037828c07f1d7f1af40763a/activation-1.1.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.48.v20220622/8a9a53e0aad3f194a4cc9940f7e9d5619254bf62/jetty-servlet-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.48.v20220622/6114f92529e9cff489528e6be77b48526a92d577/jetty-security-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.48.v20220622/b91a0641cda31c93962503b88f783602d2bd8093/jetty-server-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.48.v20220622/b113da58158c96d6dd8df440bb79c1c0b5e2056e/jetty-servlets-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.48.v20220622/fc2e953a7030045e1ca467d57e200856a170848e/jetty-client-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.12/1c9d44c563eebe9b8a3afebd29ed5c4646db800c/reflections-0.9.12.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.4/6dba6d03ac7abd8b895595b0ee7000ce35c3d421/maven-artifact-3.8.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/8990d19ec3db01f45f82d4011a11b085db66de05/zookeeper-jute-3.6.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.63.Final/879a43c2325b08e92e8967218b6ddb0ed4b7a0d3/netty-handler-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.63.Final/65bdb6c40a76ef9c4269518614a1c4ef51051484/netty-transport-native-epoll-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/logredactor/1.0.11/540bd047e99ef58bec83c59bdde5eeb63527d358/logredactor-1.0.11.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.json/json/20230227/7a0d4aca76513d8ce81f9b044ce8126b84809ad8/json-20230227.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.7/76069c915de3787f3ddd8726a56f47a95bfcbb0e/commons-validator-1.7.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.damnhandy/handy-uri-templates/2.1.8/170102d8e1d6fcc5e8f9bef45de923285dd3a80f/handy-uri-templates-2.1.8.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.re2j/re2j/1.6/a13e879fd7971738d06020fefeb108cc14e14169/re2j-1.6.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.21/c8c77949880980c26d66fe07d8e014afb3a6899a/classgraph-4.8.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.0/7857e365f925cfa060f941c1357cda1f8790502c/kotlin-stdlib-common-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.0/55f72526ddcff6fc77d72cdf949c7e3d9bd95620/kotlin-script-runtime-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.14/e021f98e50c99ac21796c7ee35eb62a737489127/joda-time-2.10.14.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.34/e71fb899349874cb2877656680508a257947601c/jersey-container-servlet-core-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.34/3f3ad63ce2b51ff565d3ba85eeb8202983e9be13/jersey-server-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.34/f9c6c7c6429a1ede8e73cf077bdca28ebff67681/jersey-client-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.34/cea85e85b1c19657ec3ea41b26351a53a40caa3c/jersey-common-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/1dcb770bce80a490dff49729b99c7a60e9ecb122/jakarta.ws.rs-api-2.1.6.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/9dedf9d2022e38ec0743ed44c1ac94ad6149acdd/hk2-locator-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.26.0-GA/bb2890849968d8d8311ffba8c37b0ce16ce284dc/javassist-3.26.0-GA.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.48.v20220622/8cb235e70bda0c5e97a41e7ee0ea33ee7f5bcc6a/jetty-http-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.48.v20220622/b09b55209d0a304e542f779750a01f6914dc55e7/jetty-io-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util-ajax/9.4.48.v20220622/def39454993d094df10b1689592d235e636d7dde/jetty-util-ajax-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.48.v20220622/2da1287dfc76d01418cc4b716d20154941b841ed/jetty-continuation-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.48.v20220622/7efc06f7ec0ff33d8c219bcc8c7415280c103669/jetty-util-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.63.Final/d4d2fccea88c80e56d59ce1053c53df0f9f4f5db/netty-codec-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.63.Final/85bd91382ec54b300ad3ff59efccbb4fccb22a88/netty-transport-native-unix-common-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.63.Final/9a8bbe1ba082c9434e6f524d3864a53f340f2df/netty-transport-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.63.Final/d07cd47c101dfa655d6d5cc304d523742fd78ca8/netty-resolver-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.63.Final/40028ce5ac7c43f1c9a1439f74637cad04013e23/netty-buffer-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.63.Final/e1206b46384d4dcbecee2901f18ce65ecf02e8a4/netty-common-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/logredactor-metrics/1.0.11/73b5f45fd9a9056266c82633c267914086f00209/logredactor-metrics-1.0.11.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.eclipsesource.minimal-json/minimal-json/0.9.5/8134f8babbfbb18373110ea0b5871fd34b9c77bf/minimal-json-0.9.5.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/73a8001e7a54a255eef0f03521ec1805dc738ca0/commons-digester-2.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/114bd7afb4a1bd9993527f52a08a252b5d2acac5/hk2-api-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/396513aa96c1d5a10aa4f75c4dcbf259a698d62d/hk2-utils-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/8096ebf722902e75fbd4f532a751e514f02e1eb7/jakarta.inject-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/de3b21279df7e755e38275137539be5e2c80dd58/osgi-resource-locator-1.0.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/5eacc6522521f7eacb081f95cee1e231648461e7/jakarta.validation-api-2.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/b2eb0a83bcbb44cc5d25f8b18f23be116313a638/aopalliance-repackaged-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-engine-1.8.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-launcher-1.8.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-commons-1.8.2.jar
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.library.path=/Users/ramingharib/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.io.tmpdir=/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.compiler=<NA>
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.name=Mac OS X
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.arch=aarch64
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.version=14.0
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.name=ramingharib
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.home=/Users/ramingharib
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.dir=/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.free=31MB
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.max=512MB
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.total=54MB
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.enableEagerACLCheck = false
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.digest.enabled = true
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.closeSessionTxn.enabled = true
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.flushDelay=0
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.maxWriteQueuePollTime=0
+2023-10-26 12:09:55.548 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.maxBatchSize=1000
+2023-10-26 12:09:55.549 INFO  org.apache.zookeeper.server.ZooKeeperServer - zookeeper.intBufferStartingSizeBytes = 1024
+2023-10-26 12:09:55.549 INFO  org.apache.zookeeper.server.BlueThrottle - Weighed connection throttling is disabled
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.slotCapacity = 60
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.slotDuration = 15
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.maxDepth = 6
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.initialDelay = 5
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.delay = 5
+2023-10-26 12:09:55.551 INFO  org.apache.zookeeper.server.util.RequestPathMetricsCollector - zookeeper.pathStats.enabled = false
+2023-10-26 12:09:55.552 INFO  org.apache.zookeeper.server.ZooKeeperServer - minSessionTimeout set to 1000
+2023-10-26 12:09:55.552 INFO  org.apache.zookeeper.server.ZooKeeperServer - maxSessionTimeout set to 20000
+2023-10-26 12:09:55.555 INFO  org.apache.zookeeper.server.ServerCnxnFactory - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2023-10-26 12:09:55.556 WARN  org.apache.zookeeper.server.ServerCnxnFactory - maxCnxns is not configured, using default value 0.
+2023-10-26 12:09:55.556 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 20 worker threads, and 64 kB direct buffers.
+2023-10-26 12:09:55.558 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - binding to port 0.0.0.0/0.0.0.0:61656
+2023-10-26 12:09:55.564 INFO  org.apache.zookeeper.server.watch.WatchManagerFactory - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2023-10-26 12:09:55.564 INFO  org.apache.zookeeper.server.watch.WatchManagerFactory - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2023-10-26 12:09:55.564 INFO  org.apache.zookeeper.server.ZKDatabase - zookeeper.snapshotSizeFactor = 0.33
+2023-10-26 12:09:55.564 INFO  org.apache.zookeeper.server.ZKDatabase - zookeeper.commitLogCount=500
+2023-10-26 12:09:55.571 INFO  org.apache.zookeeper.server.persistence.SnapStream - zookeeper.snapshot.compression.method = CHECKED
+2023-10-26 12:09:55.571 INFO  org.apache.zookeeper.server.persistence.FileTxnSnapLog - Snapshotting: 0x0 to /private/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/1698311395525-0/version-2/snapshot.0
+2023-10-26 12:09:55.573 INFO  org.apache.zookeeper.server.ZKDatabase - Snapshot loaded in 10 ms, highest zxid is 0x0, digest is 1371985504
+2023-10-26 12:09:55.573 INFO  org.apache.zookeeper.server.persistence.FileTxnSnapLog - Snapshotting: 0x0 to /private/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/1698311395525-0/version-2/snapshot.0
+2023-10-26 12:09:55.574 INFO  org.apache.zookeeper.server.ZooKeeperServer - Snapshot taken in 0 ms
+2023-10-26 12:09:55.578 INFO  org.apache.zookeeper.server.PrepRequestProcessor - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2023-10-26 12:09:55.578 INFO  org.apache.zookeeper.server.RequestThrottler - zookeeper.request_throttler.shutdownTimeout = 10000
+2023-10-26 12:09:55.582 INFO  org.apache.zookeeper.server.ContainerManager - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2023-10-26 12:09:55.582 INFO  net.mguenther.kafka.junit.EmbeddedZooKeeper - Successfully started an embedded ZooKeeper instance at 127.0.0.1:61656 which is assigned to the temporary directory /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/1698311395525-0.
+2023-10-26 12:09:55.583 INFO  net.mguenther.kafka.junit.EmbeddedKafka - Embedded Kafka broker with ID 1 is starting.
+2023-10-26 12:09:55.587 INFO  kafka.server.KafkaConfig - KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 1
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.4-IV0
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 5
+	leader.imbalance.per.broker.percentage = 1
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://localhost:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543
+	log.dirs = null
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000000
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = 127.0.0.1:61656
+	zookeeper.connection.timeout.ms = 10000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.session.timeout.ms = 8000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+
+2023-10-26 12:09:55.594 INFO  kafka.utils.Log4jControllerRegistration$ - Registered kafka:type=kafka.Log4jController MBean
+2023-10-26 12:09:55.605 INFO  org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2023-10-26 12:09:55.652 INFO  kafka.server.KafkaServer - starting
+2023-10-26 12:09:55.652 INFO  kafka.server.KafkaServer - Connecting to zookeeper on 127.0.0.1:61656
+2023-10-26 12:09:55.660 INFO  kafka.zookeeper.ZooKeeperClient - [ZooKeeperClient Kafka server] Initializing a new session to 127.0.0.1:61656.
+2023-10-26 12:09:55.661 INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+2023-10-26 12:09:55.661 INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=localhost
+2023-10-26 12:09:55.662 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=17.0.8.1
+2023-10-26 12:09:55.662 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Azul Systems, Inc.
+2023-10-26 12:09:55.662 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Users/ramingharib/.sdkman/candidates/java/17.0.8.1-zulu/zulu-17.jdk/Contents/Home
+2023-10-26 12:09:55.662 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Users/ramingharib/.gradle/caches/8.2/workerMain/gradle-worker.jar:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/classes/java/test:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/resources/test:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/classes/java/main:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer/build/resources/main:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.bakdata.kafka/streams-bootstrap/2.13.0/855f299b2fc3160467d5000fe3ce21d86b03f179/streams-bootstrap-2.13.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-schema-serializer/7.4.1/399e51a1428068c30b0bae06a328457988709e46/kafka-json-schema-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-streams-avro-serde/7.4.0/8337007e9f6b58474bff9c5cad2c6736fd9ee112/kafka-streams-avro-serde-7.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-schema-provider/7.4.1/3084a9da0a77aa380982f8dbb7883799377c15c4/kafka-json-schema-provider-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-avro-serializer/7.4.0/7c2568542ef20c611740761e7b56d47eda7e6d7b/kafka-avro-serializer-7.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-schema-serializer/7.4.1/50c331de7e8c028d097d42f909625496deb92f52/kafka-schema-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-schema-registry-client/7.4.1/32f50e80e52f811ebb7968afb9ce6f4ecef8836/kafka-schema-registry-client-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.mguenther.kafka/kafka-junit/3.4.0/6c011b416f3eec30213cec72f1062197493f294d/kafka-junit-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-test/5.1.0/4290ecf6717625f621ae30b76dcb25fd0a0eafa0/curator-test-5.1.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.4.0/721eabebf4394a241d91426feef33109404dbd9/kafka_2.13-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.4.0/27d53d859ccd77e0a1e845f396da891fba038c00/kafka_2.13-3.4.0-test.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.15.2/2de7d1c43f3e99526a5debdf26fc6b1192e811f0/jackson-dataformat-csv-2.15.2.jar:/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/common/build/libs/common-0.0.1-SNAPSHOT.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.4.0/9ee9b42d89f9bbd6f19bc4fce4407d5d240a7d48/kafka-streams-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-json-serializer/7.4.1/f5f1b3a745ab93856ad8264e297925ca3a609cab/kafka-json-serializer-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.avro/avro/1.11.1/81af5d4b9bdaaf4ba41bcb0df5241355ec34c630/avro-1.11.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-runtime/3.4.0/369199e3f291dd601db5b9a7643379e72f84b9a9/connect-runtime-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/3.4.0/5ad06330f4994c1262384223e125d03d2dc21f25/connect-json-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.4.0/cecca5f2ac676cb56fa465a471d3152a23f0f3d2/kafka-metadata-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/3.4.0/dee88baa492877135b453f8d813ccc101330fd0b/kafka-raft-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage/3.4.0/52ceb1fd9ef4d38dab094195a94951761bb6b9c/kafka-storage-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.kjetland/mbknor-jackson-jsonschema_2.13/1.0.39/6fb744d3318179cfe9d6fdad6283054caa454633/mbknor-jackson-jsonschema_2.13-1.0.39.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.15.2/8433b4bcdd2fa8e6ebca2f8035067ca2d6581deb/jackson-datatype-joda-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-tools/3.4.0/b85fccc04fef84aeef2829dc2b6d8657cf182a06/kafka-tools-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.15.2/66a50e089cfd2f93896b9b6f7a734cea7bcf2f31/jackson-datatype-jdk8-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.15.2/30d16ec2aef6d8094c5e2dce1d95034ca8b6cb42/jackson-datatype-jsr310-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.15.2/75f8d2788db20f6c587c7a19e94fb6248c314241/jackson-module-parameter-names-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.15.2/405653902e735adbd95c323f68e6a787f0c55c45/jackson-module-scala_2.13-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.15.2/eff432ebf1021d2fd64ce25bc7dcb24a37462b20/jackson-jaxrs-json-provider-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.15.2/d2bac694f9a5106a0ff239303e0e12fce937bd4b/jackson-jaxrs-base-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.15.2/6a22fd1c7b0f9788e81eea32c11dc8c1ba421f18/jackson-module-jaxb-annotations-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.15.2/9353b021f10c307c00328f52090de2bdb4b6ff9c/jackson-databind-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.15.2/4724a65ac8e8d156a24898d50fd5dbd3642870b8/jackson-annotations-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.15.2/a6fe1836469a69b3ff66037c324d75fc66ef137c/jackson-core-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-guava/2.15.2/b2079ae7afb9b36247637a02cd31355ac2ab563b/jackson-datatype-guava-2.15.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.20.0/7ab4f082fd162f60afcaf2b8744a3d959feab3e8/log4j-slf4j-impl-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.20.0/eb2a9a47b1396e00b5eee1264296729a70565cc0/log4j-core-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.2/40aeef2be7b04f96bb91e8b054affc28b7c7c935/junit-platform-engine-1.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.2/6f9f8621d8230cd38aa42e58ccbc0c00569131ce/junit-platform-commons-1.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.2/572f7a553b53f83ee59cc045ce1c3772864ab76c/junit-jupiter-engine-5.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.2/fed843581520eac594bc36bb4b0f55e7b947dda9/junit-jupiter-api-5.9.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.24.2/ebbf338e33f893139459ce5df023115971c2786f/assertj-core-3.24.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/4.7.0/dcdde55edcb523af7814ba47e57a8a097daa208d/picocli-4.7.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jooq/jool/0.9.14/e60fd100fa8ed864ba4f9aa7e4fe61cca9d34a07/jool-0.9.14.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-transforms/3.4.0/8373e2383980f95aaab50f4202e34fb977f750c1/connect-transforms-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/3.4.0/1db74c89867c04e9f844fd380578255f11949222/connect-api-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-group-coordinator/3.4.0/fbb3b282c480034b0a50ab0cf2c840102646b74/kafka-group-coordinator-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-server-common/3.4.0/401c9978d56389f344d24454ae84bdfb692e9611/kafka-server-common-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage-api/3.4.0/7ed2ee54c2ca42c004d753cc20baf55b244ef519/kafka-storage-api-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-log4j-appender/3.4.0/f0bc90dedb8651c54abebdd91c2da3916349e657/kafka-log4j-appender-3.4.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/7.4.1-ccs/3754e90cd12aa135a0f34a1ef1b66b4679da5915/kafka-clients-7.4.1-ccs.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/7.4.1-ccs/bdbd3d1cbecf3b245e74ea64f5fbb91a51c3949a/kafka-clients-7.4.1-ccs-test.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5/checker-qual-3.12.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69/error_prone_annotations-2.11.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/common-config/7.4.1/954f98b2de6222f627a00569edb9dcc372a17fc4/common-config-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/common-utils/7.4.1/c37998f437affadf49165fc4332311b7fc101c7f/common-utils-7.4.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.20.0/1fe6082e660daf07c689a89c94dc0f49c26b44bb/log4j-api-2.20.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.bitbucket.b_c/jose4j/0.7.9/b44a2235728ab1cad9ffd06013500f09a5f1d241/jose4j-0.7.9.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.4/e5838ddcf8c1c2b612a7956b9f80423a508675db/scala-logging_2.13-3.9.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.1.12.1/cb2f351bf4463751201f43bb99865235d5ba07ca/metrics-core-4.1.12.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/a6e74f826db85ff8c51c15ef0fa2ea0b462aef25/zookeeper-3.6.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.21/1a257bbdb9288f2558d3767cc2cc22b499d5091c/byte-buddy-1.12.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.6.0/6d987634f6bd6b9451f4789c6022c2115733a0de/scala-collection-compat_2.13-2.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/1.0.2/5b54f60ccf03e41e24c466462a72475ee918c304/scala-java8-compat_2.13-1.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.10/f19c2a5fc93a63398a5cfc56a14f0abf1d28d27c/scala-reflect-2.13.10.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/c51c00206bb913cd8612b24abd9fa98ae89719b1/commons-cli-1.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.10/67c1afabaea9ba51321159e70a78515647e1b73d/scala-library-2.13.10.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/7.1.2/ffe87d1c5d5b3a46d065cc4cf5311f18d8233a6b/rocksdbjni-7.1.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.5.2-1/fad786abc1d1b81570e8d9a2fc8a1ef479bc27b6/zstd-jni-1.5.2-1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.10.1/4a1e1a22cba39145dfa20f2fef4e1ca38c8e02a1/snappy-java-1.1.10.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.0/3aab2116756442bf0d4cd1c089b24d34c3baa253/snakeyaml-2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.swagger.core.v3/swagger-annotations/2.2.0/404f8a4159d7d6034c3e515e3f673f19c6a100ee/swagger-annotations-2.2.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.github.erosb/everit-json-schema/1.14.2/7fb69dc1577932080cf8f186da73112cdedb2478/everit-json-schema-1.14.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.6.0/ee527b4e12e021023d295558add29c978cc64383/kotlin-scripting-compiler-embeddable-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-impl-embeddable/1.6.0/9ca5d07e5b64e747699081c51559803db6ec313d/kotlin-scripting-compiler-impl-embeddable-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.6.0/aea1438a95ff80b5ff71ac9fc998462297ddffea/kotlin-scripting-jvm-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.6.0/5bb427e36a331fde47846d026b687b3d5a244f7c/kotlin-scripting-common-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.0/a40b8b22529b733892edf4b73468ce598bb17f04/kotlin-stdlib-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/ch.qos.reload4j/reload4j/1.2.19/4eae9978468c5e885a6fb44df7e2bbc07a20e6ce/reload4j-1.2.19.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.34/6848a8321cfa554de4456a8230e141cf410feadb/jersey-container-servlet-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.34/15bb093c57c0cac880ad7b474f7fd653cac840a1/jersey-hk2-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/99f802e0cb3e953ba3d6e698795c4aeb98d37c48/jaxb-api-2.3.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/485de3a253e23f645037828c07f1d7f1af40763a/activation-1.1.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.48.v20220622/8a9a53e0aad3f194a4cc9940f7e9d5619254bf62/jetty-servlet-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.48.v20220622/6114f92529e9cff489528e6be77b48526a92d577/jetty-security-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.48.v20220622/b91a0641cda31c93962503b88f783602d2bd8093/jetty-server-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.48.v20220622/b113da58158c96d6dd8df440bb79c1c0b5e2056e/jetty-servlets-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.48.v20220622/fc2e953a7030045e1ca467d57e200856a170848e/jetty-client-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.12/1c9d44c563eebe9b8a3afebd29ed5c4646db800c/reflections-0.9.12.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.4/6dba6d03ac7abd8b895595b0ee7000ce35c3d421/maven-artifact-3.8.4.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/8990d19ec3db01f45f82d4011a11b085db66de05/zookeeper-jute-3.6.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.63.Final/879a43c2325b08e92e8967218b6ddb0ed4b7a0d3/netty-handler-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.63.Final/65bdb6c40a76ef9c4269518614a1c4ef51051484/netty-transport-native-epoll-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/logredactor/1.0.11/540bd047e99ef58bec83c59bdde5eeb63527d358/logredactor-1.0.11.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.json/json/20230227/7a0d4aca76513d8ce81f9b044ce8126b84809ad8/json-20230227.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.7/76069c915de3787f3ddd8726a56f47a95bfcbb0e/commons-validator-1.7.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.damnhandy/handy-uri-templates/2.1.8/170102d8e1d6fcc5e8f9bef45de923285dd3a80f/handy-uri-templates-2.1.8.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.google.re2j/re2j/1.6/a13e879fd7971738d06020fefeb108cc14e14169/re2j-1.6.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.21/c8c77949880980c26d66fe07d8e014afb3a6899a/classgraph-4.8.21.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.0/7857e365f925cfa060f941c1357cda1f8790502c/kotlin-stdlib-common-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.0/55f72526ddcff6fc77d72cdf949c7e3d9bd95620/kotlin-script-runtime-1.6.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.14/e021f98e50c99ac21796c7ee35eb62a737489127/joda-time-2.10.14.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.34/e71fb899349874cb2877656680508a257947601c/jersey-container-servlet-core-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.34/3f3ad63ce2b51ff565d3ba85eeb8202983e9be13/jersey-server-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.34/f9c6c7c6429a1ede8e73cf077bdca28ebff67681/jersey-client-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.34/cea85e85b1c19657ec3ea41b26351a53a40caa3c/jersey-common-2.34.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/1dcb770bce80a490dff49729b99c7a60e9ecb122/jakarta.ws.rs-api-2.1.6.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/9dedf9d2022e38ec0743ed44c1ac94ad6149acdd/hk2-locator-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.26.0-GA/bb2890849968d8d8311ffba8c37b0ce16ce284dc/javassist-3.26.0-GA.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.48.v20220622/8cb235e70bda0c5e97a41e7ee0ea33ee7f5bcc6a/jetty-http-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.48.v20220622/b09b55209d0a304e542f779750a01f6914dc55e7/jetty-io-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util-ajax/9.4.48.v20220622/def39454993d094df10b1689592d235e636d7dde/jetty-util-ajax-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.48.v20220622/2da1287dfc76d01418cc4b716d20154941b841ed/jetty-continuation-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.48.v20220622/7efc06f7ec0ff33d8c219bcc8c7415280c103669/jetty-util-9.4.48.v20220622.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.63.Final/d4d2fccea88c80e56d59ce1053c53df0f9f4f5db/netty-codec-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.63.Final/85bd91382ec54b300ad3ff59efccbb4fccb22a88/netty-transport-native-unix-common-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.63.Final/9a8bbe1ba082c9434e6f524d3864a53f340f2df/netty-transport-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.63.Final/d07cd47c101dfa655d6d5cc304d523742fd78ca8/netty-resolver-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.63.Final/40028ce5ac7c43f1c9a1439f74637cad04013e23/netty-buffer-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.63.Final/e1206b46384d4dcbecee2901f18ce65ecf02e8a4/netty-common-4.1.63.Final.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/io.confluent/logredactor-metrics/1.0.11/73b5f45fd9a9056266c82633c267914086f00209/logredactor-metrics-1.0.11.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/com.eclipsesource.minimal-json/minimal-json/0.9.5/8134f8babbfbb18373110ea0b5871fd34b9c77bf/minimal-json-0.9.5.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/73a8001e7a54a255eef0f03521ec1805dc738ca0/commons-digester-2.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/114bd7afb4a1bd9993527f52a08a252b5d2acac5/hk2-api-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/396513aa96c1d5a10aa4f75c4dcbf259a698d62d/hk2-utils-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/8096ebf722902e75fbd4f532a751e514f02e1eb7/jakarta.inject-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/de3b21279df7e755e38275137539be5e2c80dd58/osgi-resource-locator-1.0.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/5eacc6522521f7eacb081f95cee1e231648461e7/jakarta.validation-api-2.0.2.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/b2eb0a83bcbb44cc5d25f8b18f23be116313a638/aopalliance-repackaged-2.6.1.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar:/Users/ramingharib/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-engine-1.8.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-launcher-1.8.2.jar:/Users/ramingharib/.gradle/wrapper/dists/gradle-8.2-bin/bbg7u40eoinfdyxsxr3z4i7ta/gradle-8.2/lib/plugins/junit-platform-commons-1.8.2.jar
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/ramingharib/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=aarch64
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=14.0
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=ramingharib
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/ramingharib
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/ramingharib/Developer/bakdata/uni-sofia/kafka-lab/producer
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=14MB
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=512MB
+2023-10-26 12:09:55.663 INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=54MB
+2023-10-26 12:09:55.664 INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=127.0.0.1:61656 sessionTimeout=8000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@47447ccf
+2023-10-26 12:09:55.665 INFO  org.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+2023-10-26 12:09:55.667 INFO  org.apache.zookeeper.ClientCnxn - zookeeper.request.timeout value is 0. feature enabled=false
+2023-10-26 12:09:55.670 INFO  kafka.zookeeper.ZooKeeperClient - [ZooKeeperClient Kafka server] Waiting until connected.
+2023-10-26 12:09:55.671 INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server /127.0.0.1:61656.
+2023-10-26 12:09:55.672 INFO  org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /127.0.0.1:61659, server: /127.0.0.1:61656
+2023-10-26 12:09:55.676 INFO  org.apache.zookeeper.server.persistence.FileTxnLog - Creating new log file: log.1
+2023-10-26 12:09:55.687 INFO  org.apache.zookeeper.audit.ZKAuditProvider - ZooKeeper audit is disabled.
+2023-10-26 12:09:55.688 INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server /127.0.0.1:61656, session id = 0x10014c23d180000, negotiated timeout = 8000
+2023-10-26 12:09:55.689 INFO  kafka.zookeeper.ZooKeeperClient - [ZooKeeperClient Kafka server] Connected.
+2023-10-26 12:09:55.895 INFO  kafka.server.KafkaServer - Cluster ID = kmGd039eTxuZh6jGg1DLRQ
+2023-10-26 12:09:55.897 WARN  kafka.server.BrokerMetadataCheckpoint - No meta.properties file under dir /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543/meta.properties
+2023-10-26 12:09:55.918 INFO  kafka.server.KafkaConfig - KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 1
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.4-IV0
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 5
+	leader.imbalance.per.broker.percentage = 1
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://localhost:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543
+	log.dirs = null
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000000
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = 127.0.0.1:61656
+	zookeeper.connection.timeout.ms = 10000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.session.timeout.ms = 8000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+
+2023-10-26 12:09:55.934 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Fetch]: Starting
+2023-10-26 12:09:55.934 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Produce]: Starting
+2023-10-26 12:09:55.934 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Request]: Starting
+2023-10-26 12:09:55.935 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-ControllerMutation]: Starting
+2023-10-26 12:09:55.950 INFO  kafka.log.LogManager - Loading logs from log dirs ArraySeq(/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543)
+2023-10-26 12:09:55.951 INFO  kafka.log.LogManager - Attempting recovery for all logs in /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543 since no clean shutdown file was found
+2023-10-26 12:09:55.957 INFO  kafka.log.LogManager - Loaded 0 logs in 8ms.
+2023-10-26 12:09:55.958 INFO  kafka.log.LogManager - Starting log cleanup with a period of 300000 ms.
+2023-10-26 12:09:55.959 INFO  kafka.log.LogManager - Starting log flusher with a default period of 9223372036854775807 ms.
+2023-10-26 12:09:55.964 INFO  kafka.log.LogCleaner - Starting the log cleaner
+2023-10-26 12:09:55.981 INFO  kafka.log.LogCleaner - [kafka-log-cleaner-thread-0]: Starting
+2023-10-26 12:09:55.987 INFO  kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread - [feature-zk-node-event-process-thread]: Starting
+2023-10-26 12:09:55.991 INFO  kafka.server.FinalizedFeatureChangeListener - Feature ZK node at path: /feature does not exist
+2023-10-26 12:09:56.002 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=forwarding]: Starting
+2023-10-26 12:09:56.136 INFO  kafka.network.ConnectionQuotas - Updated connection-accept-rate max connection creation rate to 2147483647
+2023-10-26 12:09:56.138 INFO  kafka.network.DataPlaneAcceptor - Awaiting socket connections on localhost:9092.
+2023-10-26 12:09:56.149 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT)
+2023-10-26 12:09:56.151 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=alterPartition]: Starting
+2023-10-26 12:09:56.160 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Produce]: Starting
+2023-10-26 12:09:56.161 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Fetch]: Starting
+2023-10-26 12:09:56.161 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-DeleteRecords]: Starting
+2023-10-26 12:09:56.162 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-ElectLeader]: Starting
+2023-10-26 12:09:56.168 INFO  kafka.server.ReplicaManager$LogDirFailureHandler - [LogDirFailureHandler]: Starting
+2023-10-26 12:09:56.178 INFO  kafka.zk.KafkaZkClient - Creating /brokers/ids/1 (is it secure? false)
+2023-10-26 12:09:56.189 INFO  kafka.zk.KafkaZkClient - Stat of the created znode at /brokers/ids/1 is: 25,25,1698311396182,1698311396182,1,0,0,72080418519121920,202,0,25
+
+2023-10-26 12:09:56.189 INFO  kafka.zk.KafkaZkClient - Registered broker 1 at path /brokers/ids/1 with addresses: PLAINTEXT://localhost:9092, czxid (broker epoch): 25
+2023-10-26 12:09:56.219 INFO  kafka.controller.ControllerEventManager$ControllerEventThread - [ControllerEventThread controllerId=1] Starting
+2023-10-26 12:09:56.222 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-topic]: Starting
+2023-10-26 12:09:56.224 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Heartbeat]: Starting
+2023-10-26 12:09:56.224 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Rebalance]: Starting
+2023-10-26 12:09:56.229 INFO  kafka.zk.KafkaZkClient - Successfully created /controller_epoch with initial epoch 0
+2023-10-26 12:09:56.231 INFO  kafka.coordinator.group.GroupCoordinator - [GroupCoordinator 1]: Starting up.
+2023-10-26 12:09:56.235 INFO  kafka.controller.KafkaController - [Controller id=1] 1 successfully elected as the controller. Epoch incremented to 1 and epoch zk version is now 1
+2023-10-26 12:09:56.236 INFO  kafka.coordinator.group.GroupCoordinator - [GroupCoordinator 1]: Startup complete.
+2023-10-26 12:09:56.237 INFO  kafka.controller.KafkaController - [Controller id=1] Creating FeatureZNode at path: /feature with contents: FeatureZNode(2,Enabled,Map())
+2023-10-26 12:09:56.241 INFO  kafka.server.FinalizedFeatureChangeListener - Feature ZK node created at path: /feature
+2023-10-26 12:09:56.244 INFO  kafka.coordinator.transaction.TransactionCoordinator - [TransactionCoordinator id=1] Starting up.
+2023-10-26 12:09:56.245 INFO  kafka.coordinator.transaction.TransactionCoordinator - [TransactionCoordinator id=1] Startup complete.
+2023-10-26 12:09:56.245 INFO  kafka.coordinator.transaction.TransactionMarkerChannelManager - [Transaction Marker Channel Manager 1]: Starting
+2023-10-26 12:09:56.251 INFO  kafka.controller.KafkaController - [Controller id=1] Registering handlers
+2023-10-26 12:09:56.252 INFO  kafka.server.metadata.ZkMetadataCache - [MetadataCache brokerId=1] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0).
+2023-10-26 12:09:56.253 INFO  kafka.controller.KafkaController - [Controller id=1] Deleting log dir event notifications
+2023-10-26 12:09:56.254 INFO  kafka.controller.KafkaController - [Controller id=1] Deleting isr change notifications
+2023-10-26 12:09:56.255 INFO  kafka.controller.KafkaController - [Controller id=1] Initializing controller context
+2023-10-26 12:09:56.260 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-AlterAcls]: Starting
+2023-10-26 12:09:56.260 INFO  kafka.controller.KafkaController - [Controller id=1] Initialized broker epochs cache: HashMap(1 -> 25)
+2023-10-26 12:09:56.268 INFO  kafka.controller.RequestSendThread - [RequestSendThread controllerId=1] Starting
+2023-10-26 12:09:56.269 INFO  kafka.controller.KafkaController - [Controller id=1] Currently active brokers in the cluster: Set(1)
+2023-10-26 12:09:56.269 INFO  kafka.controller.KafkaController - [Controller id=1] Currently shutting brokers in the cluster: HashSet()
+2023-10-26 12:09:56.269 INFO  kafka.controller.KafkaController - [Controller id=1] Current list of topics in the cluster: HashSet()
+2023-10-26 12:09:56.269 INFO  kafka.controller.KafkaController - [Controller id=1] Fetching topic deletions in progress
+2023-10-26 12:09:56.270 INFO  kafka.controller.KafkaController - [Controller id=1] List of topics to be deleted: 
+2023-10-26 12:09:56.270 INFO  kafka.controller.KafkaController - [Controller id=1] List of topics ineligible for deletion: 
+2023-10-26 12:09:56.270 INFO  kafka.controller.KafkaController - [Controller id=1] Initializing topic deletion manager
+2023-10-26 12:09:56.271 INFO  kafka.controller.TopicDeletionManager - [Topic Deletion Manager 1] Initializing manager with initial deletions: Set(), initial ineligible deletions: HashSet()
+2023-10-26 12:09:56.271 INFO  kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread - [/config/changes-event-process-thread]: Starting
+2023-10-26 12:09:56.272 INFO  kafka.controller.KafkaController - [Controller id=1] Sending update metadata request
+2023-10-26 12:09:56.273 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet(1) for 0 partitions
+2023-10-26 12:09:56.275 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Enabling request processing.
+2023-10-26 12:09:56.277 INFO  kafka.controller.ZkReplicaStateMachine - [ReplicaStateMachine controllerId=1] Initializing replica state
+2023-10-26 12:09:56.277 INFO  kafka.controller.ZkReplicaStateMachine - [ReplicaStateMachine controllerId=1] Triggering online replica state changes
+2023-10-26 12:09:56.279 INFO  kafka.controller.ZkReplicaStateMachine - [ReplicaStateMachine controllerId=1] Triggering offline replica state changes
+2023-10-26 12:09:56.279 INFO  kafka.controller.ZkPartitionStateMachine - [PartitionStateMachine controllerId=1] Initializing partition state
+2023-10-26 12:09:56.279 INFO  kafka.controller.ZkPartitionStateMachine - [PartitionStateMachine controllerId=1] Triggering online partition state changes
+2023-10-26 12:09:56.280 INFO  kafka.controller.RequestSendThread - [RequestSendThread controllerId=1] Controller 1 connected to localhost:9092 (id: 1 rack: null) for sending state change requests
+2023-10-26 12:09:56.280 INFO  kafka.controller.KafkaController - [Controller id=1] Ready to serve as the new controller with epoch 1
+2023-10-26 12:09:56.282 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.0
+2023-10-26 12:09:56.282 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2e1947d240607d53
+2023-10-26 12:09:56.282 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698311396280
+2023-10-26 12:09:56.282 INFO  kafka.server.KafkaServer - [KafkaServer id=1] started
+2023-10-26 12:09:56.283 INFO  net.mguenther.kafka.junit.EmbeddedKafka - The embedded Kafka broker with ID 1 has been started. Its logs can be found at /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543.
+2023-10-26 12:09:56.288 INFO  kafka.controller.KafkaController - [Controller id=1] Partitions undergoing preferred replica election: 
+2023-10-26 12:09:56.288 INFO  kafka.controller.KafkaController - [Controller id=1] Partitions that completed preferred replica election: 
+2023-10-26 12:09:56.288 INFO  kafka.controller.KafkaController - [Controller id=1] Skipping preferred replica election for partitions due to topic deletion: 
+2023-10-26 12:09:56.289 INFO  kafka.controller.KafkaController - [Controller id=1] Resuming preferred replica election for partitions: 
+2023-10-26 12:09:56.289 INFO  kafka.controller.KafkaController - [Controller id=1] Starting replica leader election (PREFERRED) for partitions  triggered by ZkTriggered
+2023-10-26 12:09:56.292 INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-junit-admin-client
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-26 12:09:56.298 INFO  kafka.controller.KafkaController - [Controller id=1] Starting the controller scheduler
+2023-10-26 12:09:56.304 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.0
+2023-10-26 12:09:56.305 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2e1947d240607d53
+2023-10-26 12:09:56.305 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698311396304
+2023-10-26 12:09:56.312 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=forwarding]: Recorded new controller, from now on will use node localhost:9092 (id: 1 rack: null)
+2023-10-26 12:09:56.338 INFO  kafka.zk.AdminZkClient - Creating topic raw-data with configuration {cleanup.policy=delete, min.insync.replicas=1, delete.retention.ms=86400000} and initial partition assignment HashMap(0 -> ArrayBuffer(1))
+2023-10-26 12:09:56.354 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=alterPartition]: Recorded new controller, from now on will use node localhost:9092 (id: 1 rack: null)
+2023-10-26 12:09:56.360 INFO  kafka.controller.KafkaController - [Controller id=1] New topics: [Set(raw-data)], deleted topics: [HashSet()], new partition replica assignment [Set(TopicIdReplicaAssignment(raw-data,Some(Fz6KU4tORKqyXM-WplzNPw),Map(raw-data-0 -> ReplicaAssignment(replicas=1, addingReplicas=, removingReplicas=))))]
+2023-10-26 12:09:56.361 INFO  kafka.controller.KafkaController - [Controller id=1] New partition creation callback for raw-data-0
+2023-10-26 12:09:56.362 INFO  state.change.logger - [Controller id=1 epoch=1] Changed partition raw-data-0 state from NonExistentPartition to NewPartition with assigned replicas 1
+2023-10-26 12:09:56.362 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-10-26 12:09:56.363 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-10-26 12:09:56.382 INFO  state.change.logger - [Controller id=1 epoch=1] Changed partition raw-data-0 from NewPartition to OnlinePartition with state LeaderAndIsr(leader=1, leaderEpoch=0, isr=List(1), leaderRecoveryState=RECOVERED, partitionEpoch=0)
+2023-10-26 12:09:56.384 INFO  state.change.logger - [Controller id=1 epoch=1] Sending LeaderAndIsr request to broker 1 with 1 become-leader and 0 become-follower partitions
+2023-10-26 12:09:56.385 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet(1) for 1 partitions
+2023-10-26 12:09:56.385 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-10-26 12:09:56.387 INFO  state.change.logger - [Broker id=1] Handling LeaderAndIsr request correlationId 1 from controller 1 for 1 partitions
+2023-10-26 12:09:56.397 INFO  kafka.server.ReplicaFetcherManager - [ReplicaFetcherManager on broker 1] Removed fetcher for partitions Set(raw-data-0)
+2023-10-26 12:09:56.397 INFO  state.change.logger - [Broker id=1] Stopped fetchers as part of LeaderAndIsr request correlationId 1 from controller 1 epoch 1 as part of the become-leader transition for 1 partitions
+2023-10-26 12:09:56.423 INFO  kafka.log.UnifiedLog$ - [LogLoader partition=raw-data-0, dir=/var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543] Loading producer state till offset 0 with message format version 2
+2023-10-26 12:09:56.429 INFO  kafka.log.LogManager - Created log for partition raw-data-0 in /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543/raw-data-0 with properties {cleanup.policy=delete, delete.retention.ms=86400000, min.insync.replicas=1}
+2023-10-26 12:09:56.430 INFO  kafka.cluster.Partition - [Partition raw-data-0 broker=1] No checkpointed highwatermark is found for partition raw-data-0
+2023-10-26 12:09:56.431 INFO  kafka.cluster.Partition - [Partition raw-data-0 broker=1] Log loaded for partition raw-data-0 with initial high watermark 0
+2023-10-26 12:09:56.432 INFO  state.change.logger - [Broker id=1] Leader raw-data-0 with topic id Some(Fz6KU4tORKqyXM-WplzNPw) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas []. Previous leader epoch was -1.
+2023-10-26 12:09:56.442 INFO  state.change.logger - [Broker id=1] Finished LeaderAndIsr request in 55ms correlationId 1 from controller 1 for 1 partitions
+2023-10-26 12:09:56.445 INFO  state.change.logger - [Broker id=1] Add 1 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 1 epoch 1 with correlation id 2
+2023-10-26 12:09:56.448 INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.admin.client for kafka-junit-admin-client unregistered
+2023-10-26 12:09:56.449 INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-10-26 12:09:56.449 INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-26 12:09:56.449 INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-10-26 12:09:56.465 INFO  com.bakdata.kafka.KafkaApplication - Starting application
+2023-10-26 12:09:56.468 INFO  com.bakdata.uni.RunnersDataProducer - Starting runners producer...
+2023-10-26 12:09:56.474 INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.VoidSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.json.KafkaJsonSchemaSerializer
+
+2023-10-26 12:09:56.520 INFO  io.confluent.kafka.serializers.json.KafkaJsonSchemaSerializerConfig - KafkaJsonSchemaSerializerConfig values: 
+	auto.register.schemas = true
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	json.fail.invalid.schema = false
+	json.fail.unknown.properties = true
+	json.indent.output = false
+	json.oneof.for.nullables = true
+	json.schema.spec.version = draft_7
+	json.write.dates.iso8601 = false
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [mock://test123]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-26 12:09:56.537 INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-26 12:09:56.544 WARN  org.apache.kafka.clients.producer.ProducerConfig - These configurations '[session.timeout.ms]' were supplied but are not used yet.
+2023-10-26 12:09:56.544 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.0
+2023-10-26 12:09:56.544 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 2e1947d240607d53
+2023-10-26 12:09:56.544 INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698311396544
+2023-10-26 12:09:56.546 INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-10-26 12:09:56.548 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: kmGd039eTxuZh6jGg1DLRQ
+2023-10-26 12:09:56.559 INFO  kafka.controller.KafkaController - [Controller id=1] Acquired new producerId block ProducerIdsBlock(assignedBrokerId=1, firstProducerId=0, size=1000) by writing to Zk with path version 1
+2023-10-26 12:09:56.561 INFO  org.apache.kafka.clients.producer.internals.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2023-10-26 12:09:56.562 INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-10-26 12:09:56.562 INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-26 12:09:56.562 INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-10-26 12:09:56.562 INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2023-10-26 12:09:56.564 INFO  net.mguenther.kafka.junit.EmbeddedKafka - The embedded Kafka broker with ID 1 is stopping.
+2023-10-26 12:09:56.564 INFO  kafka.server.KafkaServer - [KafkaServer id=1] shutting down
+2023-10-26 12:09:56.564 INFO  kafka.server.KafkaServer - [KafkaServer id=1] Starting controlled shutdown
+2023-10-26 12:09:56.567 INFO  kafka.controller.KafkaController - [Controller id=1] Shutting down broker 1
+2023-10-26 12:09:56.568 INFO  state.change.logger - [Controller id=1 epoch=1] Sending UpdateMetadata request to brokers HashSet() for 0 partitions
+2023-10-26 12:09:56.569 INFO  kafka.server.KafkaServer - [KafkaServer id=1] Controlled shutdown request returned successfully after 3ms
+2023-10-26 12:09:56.570 INFO  kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread - [/config/changes-event-process-thread]: Shutting down
+2023-10-26 12:09:56.570 INFO  kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread - [/config/changes-event-process-thread]: Stopped
+2023-10-26 12:09:56.570 INFO  kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread - [/config/changes-event-process-thread]: Shutdown completed
+2023-10-26 12:09:56.571 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopping socket server request processors
+2023-10-26 12:09:56.572 INFO  org.apache.kafka.clients.NetworkClient - [BrokerToControllerChannelManager broker=1 name=forwarding] Node 1 disconnected.
+2023-10-26 12:09:56.573 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Stopped socket server request processors
+2023-10-26 12:09:56.573 INFO  kafka.server.KafkaRequestHandlerPool - [data-plane Kafka Request Handler on Broker 1], shutting down
+2023-10-26 12:09:56.574 INFO  kafka.server.KafkaRequestHandlerPool - [data-plane Kafka Request Handler on Broker 1], shut down completely
+2023-10-26 12:09:56.575 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-AlterAcls]: Shutting down
+2023-10-26 12:09:56.575 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-AlterAcls]: Stopped
+2023-10-26 12:09:56.575 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-AlterAcls]: Shutdown completed
+2023-10-26 12:09:56.575 INFO  kafka.server.KafkaApis - [KafkaApi-1] Shutdown complete.
+2023-10-26 12:09:56.576 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-topic]: Shutting down
+2023-10-26 12:09:56.576 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-topic]: Shutdown completed
+2023-10-26 12:09:56.576 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-topic]: Stopped
+2023-10-26 12:09:56.577 INFO  kafka.coordinator.transaction.TransactionCoordinator - [TransactionCoordinator id=1] Shutting down.
+2023-10-26 12:09:56.577 INFO  kafka.coordinator.transaction.TransactionStateManager - [Transaction State Manager 1]: Shutdown complete
+2023-10-26 12:09:56.577 INFO  kafka.coordinator.transaction.TransactionMarkerChannelManager - [Transaction Marker Channel Manager 1]: Shutting down
+2023-10-26 12:09:56.577 INFO  kafka.coordinator.transaction.TransactionMarkerChannelManager - [Transaction Marker Channel Manager 1]: Stopped
+2023-10-26 12:09:56.577 INFO  kafka.coordinator.transaction.TransactionMarkerChannelManager - [Transaction Marker Channel Manager 1]: Shutdown completed
+2023-10-26 12:09:56.578 INFO  kafka.coordinator.transaction.TransactionCoordinator - [TransactionCoordinator id=1] Shutdown complete.
+2023-10-26 12:09:56.578 INFO  kafka.coordinator.group.GroupCoordinator - [GroupCoordinator 1]: Shutting down.
+2023-10-26 12:09:56.578 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Heartbeat]: Shutting down
+2023-10-26 12:09:56.578 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Heartbeat]: Stopped
+2023-10-26 12:09:56.578 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Heartbeat]: Shutdown completed
+2023-10-26 12:09:56.578 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Rebalance]: Shutting down
+2023-10-26 12:09:56.579 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Rebalance]: Stopped
+2023-10-26 12:09:56.579 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Rebalance]: Shutdown completed
+2023-10-26 12:09:56.579 INFO  kafka.coordinator.group.GroupCoordinator - [GroupCoordinator 1]: Shutdown complete.
+2023-10-26 12:09:56.579 INFO  kafka.server.ReplicaManager - [ReplicaManager broker=1] Shutting down
+2023-10-26 12:09:56.579 INFO  kafka.server.ReplicaManager$LogDirFailureHandler - [LogDirFailureHandler]: Shutting down
+2023-10-26 12:09:56.579 INFO  kafka.server.ReplicaManager$LogDirFailureHandler - [LogDirFailureHandler]: Stopped
+2023-10-26 12:09:56.579 INFO  kafka.server.ReplicaManager$LogDirFailureHandler - [LogDirFailureHandler]: Shutdown completed
+2023-10-26 12:09:56.579 INFO  kafka.server.ReplicaFetcherManager - [ReplicaFetcherManager on broker 1] shutting down
+2023-10-26 12:09:56.580 INFO  kafka.server.ReplicaFetcherManager - [ReplicaFetcherManager on broker 1] shutdown completed
+2023-10-26 12:09:56.580 INFO  kafka.server.ReplicaAlterLogDirsManager - [ReplicaAlterLogDirsManager on broker 1] shutting down
+2023-10-26 12:09:56.580 INFO  kafka.server.ReplicaAlterLogDirsManager - [ReplicaAlterLogDirsManager on broker 1] shutdown completed
+2023-10-26 12:09:56.580 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Fetch]: Shutting down
+2023-10-26 12:09:56.580 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Fetch]: Stopped
+2023-10-26 12:09:56.580 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Fetch]: Shutdown completed
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Produce]: Shutting down
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Produce]: Stopped
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-Produce]: Shutdown completed
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-DeleteRecords]: Shutting down
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-DeleteRecords]: Stopped
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-DeleteRecords]: Shutdown completed
+2023-10-26 12:09:56.581 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-ElectLeader]: Shutting down
+2023-10-26 12:09:56.582 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-ElectLeader]: Stopped
+2023-10-26 12:09:56.582 INFO  kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper - [ExpirationReaper-1-ElectLeader]: Shutdown completed
+2023-10-26 12:09:56.588 INFO  kafka.server.ReplicaManager - [ReplicaManager broker=1] Shut down completely
+2023-10-26 12:09:56.588 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=alterPartition]: Shutting down
+2023-10-26 12:09:56.588 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=alterPartition]: Stopped
+2023-10-26 12:09:56.588 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=alterPartition]: Shutdown completed
+2023-10-26 12:09:56.589 INFO  kafka.server.BrokerToControllerChannelManagerImpl - Broker to controller channel manager for alterPartition shutdown
+2023-10-26 12:09:56.589 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=forwarding]: Shutting down
+2023-10-26 12:09:56.589 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=forwarding]: Stopped
+2023-10-26 12:09:56.589 INFO  kafka.server.BrokerToControllerRequestThread - [BrokerToControllerChannelManager broker=1 name=forwarding]: Shutdown completed
+2023-10-26 12:09:56.589 INFO  kafka.server.BrokerToControllerChannelManagerImpl - Broker to controller channel manager for forwarding shutdown
+2023-10-26 12:09:56.590 INFO  kafka.log.LogManager - Shutting down.
+2023-10-26 12:09:56.590 INFO  kafka.log.LogCleaner - Shutting down the log cleaner.
+2023-10-26 12:09:56.590 INFO  kafka.log.LogCleaner - [kafka-log-cleaner-thread-0]: Shutting down
+2023-10-26 12:09:56.591 INFO  kafka.log.LogCleaner - [kafka-log-cleaner-thread-0]: Stopped
+2023-10-26 12:09:56.591 INFO  kafka.log.LogCleaner - [kafka-log-cleaner-thread-0]: Shutdown completed
+2023-10-26 12:09:56.615 INFO  kafka.log.LogManager - Shutdown complete.
+2023-10-26 12:09:56.615 INFO  kafka.controller.ControllerEventManager$ControllerEventThread - [ControllerEventThread controllerId=1] Shutting down
+2023-10-26 12:09:56.615 INFO  kafka.controller.ControllerEventManager$ControllerEventThread - [ControllerEventThread controllerId=1] Shutdown completed
+2023-10-26 12:09:56.615 INFO  kafka.controller.ControllerEventManager$ControllerEventThread - [ControllerEventThread controllerId=1] Stopped
+2023-10-26 12:09:56.616 INFO  kafka.controller.ZkPartitionStateMachine - [PartitionStateMachine controllerId=1] Stopped partition state machine
+2023-10-26 12:09:56.616 INFO  kafka.controller.ZkReplicaStateMachine - [ReplicaStateMachine controllerId=1] Stopped replica state machine
+2023-10-26 12:09:56.617 INFO  kafka.controller.RequestSendThread - [RequestSendThread controllerId=1] Shutting down
+2023-10-26 12:09:56.617 INFO  kafka.controller.RequestSendThread - [RequestSendThread controllerId=1] Shutdown completed
+2023-10-26 12:09:56.617 INFO  kafka.controller.RequestSendThread - [RequestSendThread controllerId=1] Stopped
+2023-10-26 12:09:56.617 INFO  kafka.controller.KafkaController - [Controller id=1] Resigned
+2023-10-26 12:09:56.617 INFO  kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread - [feature-zk-node-event-process-thread]: Shutting down
+2023-10-26 12:09:56.617 INFO  kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread - [feature-zk-node-event-process-thread]: Shutdown completed
+2023-10-26 12:09:56.617 INFO  kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread - [feature-zk-node-event-process-thread]: Stopped
+2023-10-26 12:09:56.618 INFO  kafka.zookeeper.ZooKeeperClient - [ZooKeeperClient Kafka server] Closing.
+2023-10-26 12:09:56.729 INFO  org.apache.zookeeper.ZooKeeper - Session: 0x10014c23d180000 closed
+2023-10-26 12:09:56.729 INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x10014c23d180000
+2023-10-26 12:09:56.730 INFO  kafka.zookeeper.ZooKeeperClient - [ZooKeeperClient Kafka server] Closed.
+2023-10-26 12:09:56.730 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Fetch]: Shutting down
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Fetch]: Shutdown completed
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Fetch]: Stopped
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Produce]: Shutting down
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Produce]: Stopped
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Produce]: Shutdown completed
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Request]: Shutting down
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Request]: Stopped
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-Request]: Shutdown completed
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-ControllerMutation]: Shutting down
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-ControllerMutation]: Stopped
+2023-10-26 12:09:56.731 INFO  kafka.server.ClientQuotaManager$ThrottledChannelReaper - [ThrottledChannelReaper-ControllerMutation]: Shutdown completed
+2023-10-26 12:09:56.732 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutting down socket server
+2023-10-26 12:09:56.740 INFO  kafka.network.SocketServer - [SocketServer listenerType=ZK_BROKER, nodeId=1] Shutdown completed
+2023-10-26 12:09:56.740 INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-10-26 12:09:56.740 INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-26 12:09:56.740 INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-10-26 12:09:56.741 INFO  kafka.server.BrokerTopicStats - Broker and topic stats closed
+2023-10-26 12:09:56.741 INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.server for 1 unregistered
+2023-10-26 12:09:56.741 INFO  kafka.server.KafkaServer - [KafkaServer id=1] shut down completed
+2023-10-26 12:09:56.741 INFO  net.mguenther.kafka.junit.EmbeddedKafka - Removing working directory at /var/folders/d_/mz0v1k6n5p991qqd36r26s4w0000gn/T/kafka-junit3115278452898727543. This directory contains Kafka logs for Kafka broker with ID 1 as well.
+2023-10-26 12:09:56.744 INFO  net.mguenther.kafka.junit.EmbeddedKafka - The embedded Kafka broker with ID 1 has been stopped.
+2023-10-26 12:09:56.744 INFO  net.mguenther.kafka.junit.EmbeddedZooKeeper - The embedded ZooKeeper instance at 127.0.0.1:61656 is stopping.
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - ConnnectionExpirerThread interrupted
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - selector thread exitted run method
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - selector thread exitted run method
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.NIOServerCnxnFactory - accept thread exitted run method
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.ZooKeeperServer - shutting down
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.RequestThrottler - Shutting down
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.RequestThrottler - Draining request throttler queue
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.RequestThrottler - RequestThrottler shutdown. Dropped 0 requests
+2023-10-26 12:09:56.744 INFO  org.apache.zookeeper.server.SessionTrackerImpl - Shutting down
+2023-10-26 12:09:56.745 INFO  org.apache.zookeeper.server.PrepRequestProcessor - Shutting down
+2023-10-26 12:09:56.745 INFO  org.apache.zookeeper.server.SyncRequestProcessor - Shutting down
+2023-10-26 12:09:56.745 INFO  org.apache.zookeeper.server.PrepRequestProcessor - PrepRequestProcessor exited loop!
+2023-10-26 12:09:56.745 INFO  org.apache.zookeeper.server.SyncRequestProcessor - SyncRequestProcessor exited!
+2023-10-26 12:09:56.745 INFO  org.apache.zookeeper.server.FinalRequestProcessor - shutdown of request processor complete
+2023-10-26 12:09:56.746 INFO  net.mguenther.kafka.junit.EmbeddedZooKeeper - The embedded ZooKeeper instance at 127.0.0.1:61656 has been shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

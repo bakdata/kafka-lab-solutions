@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "RunnersStatus",
+  "namespace": "com.bakdata.uni",
+  "fields": [
+    {
+      "name": "runner_id",
+      "type": "string"
+    },
+    {
+      "name": "session",
+      "type": "string"
+    },
+    {
+      "name": "distance",
+      "type": "int"
+    },
+    {
+      "name": "heart_rate",
+      "type": "int"
+    },
+    {
+      "name": "speed",
+      "type": "double"
+    },
+    {
+      "name": "run_time",
+      "type": "long"
+    }
+  ]
+}
